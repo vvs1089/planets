@@ -1,0 +1,28 @@
+---------------------------To create a git repo----------------------------------
+git init #Inside the project directory
+
+---------------------------Workflow for committing to local git repo-------------
+
+#Add or modify files
+git add name_of_files
+git commit -m "add_a_brief_message"
+
+#We can check the status at any point with
+git status
+
+--------------------------Link local repo to GitHub repo-------------------------
+git remote add origin "link_to_online_repo"
+
+#Push data from the Github server
+git push origin master
+
+#Pull data from the GitHub server
+git pull origin master
+
+-----------------------To avoid merge conflicts----------------------------------
+
+1. ALWAYS git pull origin master before beginning to work locally.
+2. Make the changes.
+3. git add filenames
+4. git commit -m "message"
+5. git push origin master
